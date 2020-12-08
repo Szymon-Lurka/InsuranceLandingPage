@@ -1,0 +1,50 @@
+.information {
+    padding: 50px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    height: 70vh;
+
+    @media (max-width:767px) {
+        height: 80vh;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    @media(min-width: 800px) and (max-width:1024px) {
+        height: 50vh;
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+
+        @include media1200px {
+            font-size: 2rem;
+        }
+    }
+
+    &__description {
+        font-size: 1.5rem;
+
+        @include media1200px {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__link {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: black;
+        text-decoration: underline;
+    }
+
+    &__image {
+        height: 405px;
+
+        @include media1200px {
+            opacity: .3;
+            position: absolute;
+            transform: translate(-60%, 40%);
+        }
+    }
+}

@@ -1,0 +1,88 @@
+header {
+    height: 93.5vh;
+    border-bottom: 3px solid $secondColor;
+}
+
+.header {
+    .col {
+        position: relative;
+    }
+
+    &__container-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 640px;
+        max-width: 490px;
+        padding-left: 50px;
+
+        @media(max-width:1506px) {
+            max-width: none;
+        }
+
+        @include media1200px {
+            height: 300px;
+            width: 100vw;
+            align-items: center;
+            padding-left: 0;
+            max-width: none;
+        }
+
+        span {
+            color: $secondColor;
+        }
+
+        .header__title {
+            font-size: 6rem;
+            font-weight: 700;
+
+            @include media1200px {
+                font-size: 4rem;
+            }
+        }
+
+        .header__description {
+            font-size: 2.9rem;
+            font-weight: 600;
+
+            @include media1200px {
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__img {
+        margin-top: 100px;
+        position: relative;
+        left: -50px;
+        top: 0;
+        width: 883px;
+
+        @include media1200px {
+            left: 0;
+        }
+    }
+
+    &__btn {
+        background-color: $secondColor;
+        font-size: 2.9rem;
+        font-family: $mainFont;
+        font-weight: 700;
+        text-transform: none;
+        width: 230px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 40px auto;
+
+        @include media1200px {
+            margin: -85px auto 30px;
+        }
+
+        &:hover {
+            background-color: #94ee0e;
+        }
+    }
+
+}

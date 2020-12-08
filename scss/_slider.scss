@@ -1,0 +1,16 @@
+.slider {
+    height: 150px;
+    width: 100vw;
+    padding: auto 5px;
+    margin: 50px auto;
+    overflow-x: hidden;
+
+    div:active {
+        border: none;
+        border-style: none;
+    }
+
+    @media(max-width:1000px) {
+        display: none;
+    }
+}

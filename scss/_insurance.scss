@@ -1,0 +1,114 @@
+.insurance {
+    text-align: center;
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 700;
+        color: #303030;
+        margin: 100px auto 100px;
+    }
+
+    &-description {
+        width: 100%;
+        min-height: 300px;
+        position: relative;
+        background-color: #F5F5F5;
+        border-radius: 10px;
+        margin-top: 25px;
+        display: none;
+        flex-wrap: wrap;
+        padding-left: 50px;
+        opacity: 0;
+        transition: .5s;
+        animation: cardAnimation .5s linear both alternate-reverse;
+        overflow: hidden;
+
+        &::after {
+            width: 170px;
+            height: 2px;
+            background-color: $secondColor;
+            content: '';
+            position: absolute;
+        }
+
+        &.active {
+            display: flex;
+            animation: cardAnimation .5s linear both;
+        }
+
+        &.active::after {
+            animation: lineAnimation .5s .5s linear both;
+        }
+
+        &__title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            flex-basis: 50%;
+            text-align: left;
+            margin-left: 15px;
+        }
+
+        &__image {
+            flex-basis: 5%;
+            height: 44px;
+            width: 44px;
+            margin-left: -30px;
+        }
+
+        &__paragraph {
+            flex-basis: 80%;
+            text-align: left;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.insurance__card {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 200px;
+    box-sizing: border-box !important;
+    transition: .2s;
+    box-shadow: 0px 0px 2px gray;
+
+    &.active {
+        border: 1px solid $secondColor;
+        box-shadow: 0px 0px 8px$secondColor;
+    }
+}
+
+.card-content {
+    text-align: left;
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    &__description {
+        font-size: 1.3rem;
+    }
+}
+
+@keyframes cardAnimation {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes lineAnimation {
+    0% {
+        transform: translate(-300px)
+    }
+
+    100% {
+        transform: translate(-50px)
+    }
+}

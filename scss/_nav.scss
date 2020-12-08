@@ -1,0 +1,38 @@
+nav {
+    background-color:white;
+    box-shadow:none;
+    .nav-wrapper {
+        .motto-container {
+            position:absolute;
+            left: 265px;
+            @media(max-width:1230px) {
+                display:none;
+            }
+            .motto {
+                font-size: 1.4rem;
+                font-weight: 300;
+                color:#A2A2A2 !important;
+            }
+            .line {
+                height:30px;
+                width:1.5px;
+                position:absolute;
+                top:50%;
+                left: -5%;
+                transform: translateY(-50%);
+                background-color:#A2A2A2;
+            }
+        }
+    }
+    .logo {
+        transform: translateY(15%);
+        @media(max-width:992px) {
+            transform: translateY(15%) translateX(-50%);
+        }
+    }
+}
+.sidenav .nav-btn, .nav-btn {
+    font-weight:600;
+    color:black;
+    font-size:18px;
+}

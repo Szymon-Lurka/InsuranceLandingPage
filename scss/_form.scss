@@ -1,0 +1,55 @@
+.form {
+    height: 50vh;
+    margin-top: 200px;
+    padding-bottom: 50px;
+
+    @media (max-width:500px) {
+        height: 70vh;
+    }
+
+    label {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #C4C4C4;
+        margin-left: 10px;
+    }
+
+    .validate {
+        padding-bottom: 10px !important;
+        margin: 10px !important;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__header {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #2A2A2B;
+    }
+
+    &__description {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #515151;
+    }
+
+    &__btn {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $secondColor;
+        font-size: 2rem;
+        font-weight: 600;
+        width: 230px;
+
+        &:hover {
+            background-color: #94ee0e;
+        }
+    }
+}

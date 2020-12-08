@@ -1,0 +1,71 @@
+.baner {
+    width: 100vw;
+    height: 500px;
+    background: linear-gradient(rgba(51, 51, 51, .8), rgba(51, 51, 51, .8)), url(../assets/jpg/banerBgc.jpg) no-repeat center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    overflow: hidden;
+
+    @media(max-width:1100px) {
+        height: 700px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 600;
+
+        @include media1200px {
+            font-size: 2.3rem;
+        }
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        width: 50%;
+        text-align: center;
+
+        @include media1200px {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__checkpoints {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        @media(min-width:954px) {
+            width: 40%;
+        }
+
+        @media(min-width:1200px) {
+            width: 30%;
+        }
+
+        @media(min-width:1500px) {
+            width: 23%;
+        }
+
+        &-description {
+            font-size: 1.6rem;
+            font-weight: 600;
+            position: relative;
+            margin-left: 50px;
+
+            i {
+                position: absolute;
+                top: 50%;
+                left: -30%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

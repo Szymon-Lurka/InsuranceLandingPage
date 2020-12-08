@@ -1,0 +1,104 @@
+.rates {
+    width: 100vw;
+    height: 800px;
+    background-color: #F9F9F9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 100px;
+
+    &__container {
+        width: 50%;
+        box-shadow: 0 0 10px gray;
+
+
+
+        @include media1200px {
+            width: 100%;
+        }
+
+        @media(min-width:1000px) and (max-width:1300px) {
+            width: 70%;
+        }
+
+        &-header {
+            background-color: #DBDBDB;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            @include media1200px {
+                flex-direction: column;
+            }
+
+            &-title {
+                font-size: 3rem;
+                font-weight: 700;
+                color: #303030;
+
+                @include media1200px {
+                    font-size: 2rem;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 1.7rem;
+                    color: #807F7F;
+                }
+            }
+
+            &-btn {
+                background-color: #84C225;
+                border-radius: 5px;
+                font-size: 2rem;
+                font-weight: 600;
+                text-transform: none;
+
+                @include media1200px {
+                    margin: 20px;
+                }
+
+                &:hover {
+                    background-color: #99ff00;
+                }
+            }
+        }
+
+        &-rate {
+            overflow-Y: scroll;
+            max-height: 450px;
+
+            &-box {
+                padding: 20px;
+
+                img {
+                    @include media1200px {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+
+        &-title {
+            font-size: 2.3rem;
+            font-weight: 700;
+
+            @include media1200px {
+                font-size: 1.8rem;
+            }
+        }
+
+        &-description {
+            font-size: 1.6rem;
+
+            @include media1200px {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+}
