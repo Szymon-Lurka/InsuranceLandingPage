@@ -1,1 +1,3 @@
-# STRONA DLA UBEZPIECZENIAODADOZ.PL
+# Landing page for Insurance Company
+
+## Used SCSS, MATERIALIZE.
