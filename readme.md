@@ -1,3 +1,7 @@
 # Landing page for Insurance Company
 
-## Used SCSS, MATERIALIZE.
+## Stack:
+-Materialize
+-JQ
+-SCSS
+-Slick library
